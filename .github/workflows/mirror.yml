@@ -1,9 +1,7 @@
 on:
     push:
       branches:
-        - landos
         - draft/jolly-pascal
-        - main
       tags: ["**"]
 jobs:
   mirror:
@@ -19,6 +17,6 @@ jobs:
         run: ssh-keyscan -H gitlab.com >> ~/.ssh/known_hosts
       - name: Push mirror
         run: |
-          git remote add gitlab git@gitlab.com:vneshka/control-panel-frontend.git
+          git remote add gitlab git@gitlab.com:vneshka/frontend.git
           git push gitlab --all
           git push gitlab --tags
