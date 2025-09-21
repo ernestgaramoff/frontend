@@ -20,4 +20,5 @@ jobs:
       - name: Push mirror
         run: |
           git remote add gitlab git@gitlab.com:vneshka/landing-page.git
-          git push --mirror gitlab
+          git push gitlab --all
+          git push gitlab --tags
