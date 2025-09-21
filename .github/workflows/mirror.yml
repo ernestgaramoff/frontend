@@ -1,4 +1,3 @@
-- name: Mirror to GitLab via ssh
 on:
     push:
       branches:
