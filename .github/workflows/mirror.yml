@@ -17,5 +17,5 @@ jobs:
         run: ssh-keyscan -H gitlab.com >> ~/.ssh/known_hosts
       - name: Push mirror
         run: |
-          git remote add gitlab git@gitlab.com:vneshka.pro/landing-page.git
+          git remote add gitlab git@gitlab.com:vneshka/landing-page.git
           git push --mirror gitlab
