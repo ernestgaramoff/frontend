@@ -2,6 +2,8 @@ on:
     push:
       branches:
         - landos
+        - draft/jolly-pascal
+        - main
       tags: ["**"]
 jobs:
   mirror:
